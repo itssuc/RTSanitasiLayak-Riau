@@ -151,7 +151,7 @@ carto_positron_lite_rainbow.addTo(map);
 
 		info.update = function (props) {
 			this._div.innerHTML = '<h4>Rumah Tangga yang Memiliki Akses Terhadap Sanitasi Layak Kabupaten/Kota</h4>' +  (props ?
-				'<b>' + props.dist_ina + '</b><br />' + props.rtsanitasilayakriau + ' %'
+				'<b>' + props.dist_ina + '</b><br />' + props.rtsanitasi + ' %'
 				: 'Gerakkan mouse Anda');
 		};
 
@@ -179,7 +179,7 @@ carto_positron_lite_rainbow.addTo(map);
 				color: 'white',
 				dashArray: '3',
 				fillOpacity: 0.7,
-				fillColor: getColor(feature.properties.rtsanitasilayakriau)
+				fillColor: getColor(feature.properties.rtsanitasi)
 			};
 		}
 
